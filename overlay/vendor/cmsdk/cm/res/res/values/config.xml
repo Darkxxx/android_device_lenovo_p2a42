@@ -48,5 +48,6 @@
     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
      
     <bool name="config_useSegmentedBatteryLed">true</bool>
-
+    <bool name="configmultipleNotificationLeds">true</bool>
+     
 </resources>
