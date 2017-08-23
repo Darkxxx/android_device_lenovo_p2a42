@@ -77,7 +77,7 @@ debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 ro.opengles.version=196610
 ro.qualcomm.cabl=0
-ro.sf.lcd_density=420
+ro.sf.lcd_density=480
 qemu.hw.mainkeys=0
 
 #Enable B service adj transition by default
@@ -202,7 +202,7 @@ ro.core_ctl_max_cpu=4
 pm.sleep_mode=1
 ro.com.google.networklocation=1
 
-#HWUI properties
+# HWUI properties
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
 ro.hwui.r_buffer_cache_size=8
@@ -214,3 +214,13 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
+
+# Storage
+ro.sys.sdcardfs=true
+persist.fuse_sdcard=true
+
+# Google base
+ro.com.google.clientidbase.ms=android-lenovo
+ro.com.google.clientidbase.am=android-lenovo
+ro.com.google.clientidbase.gmm=android-lenovo
+ro.com.google.clientidbase.yt=android-lenovo
