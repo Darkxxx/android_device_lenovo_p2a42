@@ -11,12 +11,12 @@ GPU     | Adreno 506
 Memory  | 3/4 GB (933 MHz)
 Shipped Android Version | Android 6.0.1 with VibeUI
 Storage | 32/64 GB
-MicroSD | Up to 256 GB (Hybrid)
+MicroSD | Up to 128 GB (Hybrid)
 Battery | 5100 mAh (non-removable)
 Dimensions | 153 x 76 x 8.5 mm
 Display | 1080 x 1920 pixels, 5.5" Super AMOLED
 Rear Camera  | 13.0 MP, Dual LED flash
-Front Camera | 8.0 MP
+Front Camera | 5.0 MP
 FingerPrint | Yes
 Release Date | November 2016
 
