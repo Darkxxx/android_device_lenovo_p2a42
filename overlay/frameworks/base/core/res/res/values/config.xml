@@ -187,11 +187,23 @@
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Default LED on time for notification LED in milliseconds. -->
+    <integer name="config_defaultNotificationLedOn">500</integer>
+
+    <!-- Default LED off time for notification LED in milliseconds. -->
+    <integer name="config_defaultNotificationLedOff">2000</integer>
+ 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
+ 
+    <!-- Does the notification LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
@@ -302,6 +314,28 @@
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
+ 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+ 
+    <!-- Flag indicating if the speed up audio on mt call code should be executed -->
+    <bool name="config_speed_up_audio_on_mt_calls">true</bool>
+
+    <!-- Whether safe headphone volume is enabled or not (country specific). -->
+    <bool name="config_safe_media_volume_enabled">false</bool>
+ 
+    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+         autodetected from the Configuration. -->
+    <bool name="config_showNavigationBar">true</bool>
+ 
+    <!-- Flag specifying whether VoLTE availability is based on provisioning -->
+    <bool name="config_carrier_volte_provisioned">true</bool>
+
+    <!-- Flag specifying whether VoLTE TTY is supported -->
+    <bool name="config_carrier_volte_tty_supported">true</bool>
+
+    <!-- Flag specifying whether VT is available on device -->
+    <bool name="config_device_vt_available">true</bool>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
