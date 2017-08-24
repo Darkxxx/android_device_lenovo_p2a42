@@ -184,9 +184,6 @@ drm.service.enabled=true
 persist.sys.strictmode.disable=true
 persist.sys.strictmode.visual=0
 
-# Usb
-persist.sys.usb.config=mtp
-
 # Set cutoff voltage to 3400mV
 ro.cutoff_voltage_mv=3400
 
@@ -219,8 +216,19 @@ ro.hwui.text_large_cache_height=1024
 ro.sys.sdcardfs=true
 persist.fuse_sdcard=true
 
-# Google base
+# Google play
 ro.com.google.clientidbase.ms=android-lenovo
 ro.com.google.clientidbase.am=android-lenovo
 ro.com.google.clientidbase.gmm=android-lenovo
 ro.com.google.clientidbase.yt=android-lenovo
+
+# USB
+persist.sys.usb.config=mtp
+ro.usb.mtp=2e82
+ro.usb.mtp_adb=2e76
+ro.usb.ptp=2e83
+ro.usb.ptp_adb=2e84
+ro.usb.bpt=2ec1
+ro.usb.bpt_adb=2ec5
+ro.usb.bpteth=2ec3
+ro.usb.bpteth_adb=2ec6
