@@ -118,7 +118,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.am.reschedule_service=true
 ro.sys.fw.dex2oat_thread_count=4
 
-
 # Netmgrd
 ro.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
@@ -190,9 +189,8 @@ persist.sys.usb.config=mtp
 # Set cutoff voltage to 3400mV
 ro.cutoff_voltage_mv=3400
 
-# Single Sim
-persist.radio.multisim.config=ssss
-ro.lenovo.sim=ssss
+# Dual/Single Sim
+#persist.radio.multisim.config=dsds
 
 # Min/max cpu in core control
 ro.core_ctl_min_cpu=2
