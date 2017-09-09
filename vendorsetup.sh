@@ -1,1 +1,3 @@
+add_lunch_combo lineage_p2a42-user
 add_lunch_combo lineage_p2a42-userdebug
+add_lunch_combo lineage_p2a42-eng
