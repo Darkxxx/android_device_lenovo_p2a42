@@ -1,0 +1,9 @@
+[
+ {
+   "repository": "android_device_lenovo_p2a42",
+   "target_path": "device/lenovo/p2a42"
+ },
+   "repository": "android_kernel_lenovo/p2a42",
+   "target_path": "kernel/lenovo/p2a42"
+ }
+]
