@@ -152,15 +152,15 @@ on boot
 #   Define TCP buffer sizes for various networks
 #   ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
     setprop net.tcp.buffersize.default 4096,87380,524288,4096,16384,110208
-    setprop net.tcp.buffersize.lte     2097152,4194304,8388608,262144,524288,1048576
-    setprop net.tcp.buffersize.umts    4094,87380,110208,4096,16384,110208
-    setprop net.tcp.buffersize.hspa    4094,87380,1220608,4096,16384,1220608
-    setprop net.tcp.buffersize.hsupa   4094,87380,1220608,4096,16384,1220608
-    setprop net.tcp.buffersize.hsdpa   4094,87380,1220608,4096,16384,1220608
-    setprop net.tcp.buffersize.hspap   4094,87380,1220608,4096,16384,1220608
-    setprop net.tcp.buffersize.edge    4093,26280,35040,4096,16384,35040
-    setprop net.tcp.buffersize.gprs    4092,8760,11680,4096,8760,11680
-    setprop net.tcp.buffersize.evdo    4094,87380,524288,4096,16384,262144
+    setprop net.tcp.buffersize.lte 2097152,4194304,8388608,262144,524288,1048576
+    setprop net.tcp.buffersize.umts 4094,87380,110208,4096,16384,110208
+    setprop net.tcp.buffersize.hspa 4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.hsupa 4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.hsdpa 4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.hspap 4094,87380,1220608,4096,16384,1220608
+    setprop net.tcp.buffersize.edge 4093,26280,35040,4096,16384,35040
+    setprop net.tcp.buffersize.gprs 4092,8760,11680,4096,8760,11680
+    setprop net.tcp.buffersize.evdo 4094,87380,524288,4096,16384,262144
 
     setprop net.tcp.2g_init_rwnd 10
 
@@ -352,8 +352,8 @@ on post-fs-data
     # Create a folder for audio delta files
     mkdir /data/audio/acdbdata 0770 media audio
     mkdir /data/audio/acdbdata/delta 0770 media audio
-
-    setprop vold.post_fs_data_done 1
+    
+    setprop setprop vold.post_fs_data_done 1
 
     #Create a folder for SRS to be able to create a usercfg file
     mkdir /data/data/media 0770 media media
@@ -577,6 +577,40 @@ on property:wc_transport.start_fmhci=true
 
 on property:wc_transport.start_fmhci=false
     stop fmhal_service
+
+service imsqmidaemon /system/bin/imsqmidaemon
+    class main
+    user system
+    socket ims_qmid stream 0660 system radio
+    group radio log diag
+
+
+service imsdatadaemon /system/bin/imsdatadaemon
+    class main
+    user system
+    socket ims_datad stream 0660 system radio
+    group system wifi radio inet log diag
+    disabled
+
+on property:sys.ims.QMI_DAEMON_STATUS=1
+    start imsdatadaemon
+
+service ims_rtp_daemon /system/bin/ims_rtp_daemon
+   class main
+   user system
+   socket ims_rtpd stream 0660 system radio
+   group radio diag inet log
+   disabled
+
+service imscmservice /system/bin/imscmservice
+   class main
+   user system
+   group radio diag inet log
+   disabled
+
+on property:sys.ims.DATA_DAEMON_STATUS=1
+   start ims_rtp_daemon
+   start imscmservice
 
 service start_hci_filter /system/bin/wcnss_filter
     class late_start
@@ -1011,7 +1045,7 @@ on property:persist.ims.regmanager.mode=1
 
 on property:ro.data.large_tcp_window_size=true
     # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
-    write /proc/sys/net/ipv4/tcp_adv_win_scale  2
+    write /proc/sys/net/ipv4/tcp_adv_win_scale 2
 
 service battery_monitor /system/bin/battery_monitor
     user system
