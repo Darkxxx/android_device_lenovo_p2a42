@@ -1,5 +1,5 @@
 #
-# Lenovo P2 System Properties by Incredible@One-Teams.Com
+# Lenovo P2 System Properties by Relaxx19
 #
 
 # Audio
@@ -64,6 +64,7 @@ persist.dpm.feature=1
 persist.debug.coresight.config=stm-events
 
 # Display
+debug.hwui.use_buffer_age=false
 persist.debug.wfd.enable=1
 persist.hwc.enable_vds=1
 debug.sf.hw=0
@@ -77,7 +78,7 @@ debug.enable.sglscale=1
 debug.gralloc.enable_fb_ubwc=1
 ro.opengles.version=196610
 ro.qualcomm.cabl=0
-ro.sf.lcd_density=480
+ro.sf.lcd_density=420
 qemu.hw.mainkeys=0
 
 #Enable B service adj transition by default
@@ -144,9 +145,7 @@ ro.telephony.call_ring.multiple=false
 persist.radio.sib16_support=1
 persist.radio.custom_ecc=1
 persist.radio.calls.on.ims=0
-persist.radio.jbims=0
 persist.radio.csvt.enabled=false
-persist.radio.rat_on=combine
 persist.radio.mt_sms_ack=20
 persist.radio.apm_sim_not_pwdn=1
 persist.dbg.volte_avail_ovr=1
@@ -161,6 +160,17 @@ persist.radio.sw_mbn_update=0
 persist.radio.hw_mbn_update=0
 service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
+
+# IMS
+persist.radio.jbims=1
+persist.radio.RATE_ADAPT_ENABLE=1
+persist.radio.VT_ENABLE=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.radio.VT_USE_MDM_TIME=0
+sys.ims.DATA_DAEMON_STATUS=1
+persist.radio.ROTATION_ENABLE=1
+persist.radio.NO_STAPA=1
+persist.radio.rat_on=combine
 
 # Time Services
 persist.timed.enable=true
@@ -185,11 +195,19 @@ persist.sys.strictmode.visual=0
 
 # Usb
 persist.sys.usb.config=mtp
+ro.usb.mtp=2e82
+ro.usb.mtp_adb=2e76
+ro.usb.ptp=2e83
+ro.usb.ptp_adb=2e84
+ro.usb.bpt=2ee5
+ro.usb.bpt_adb=2ee6
+ro.usb.bpteth=2ee7
+ro.usb.bpteth_adb=2ee8
 
 # Set cutoff voltage to 3400mV
 ro.cutoff_voltage_mv=3400
 
-# Dual/Single Sim
+# Dual/Single Sim Support
 #persist.radio.multisim.config=dsds
 
 # Min/max cpu in core control
