@@ -52,9 +52,6 @@ TARGET_KERNEL_CONFIG := lineageos_p2a42_defconfig
 TARGET_KERNEL_SOURCE := kernel/lenovo/msm8953
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
-# ANT
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
-
 # Audio
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
@@ -66,7 +63,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lenovo/p2a42/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -138,8 +135,14 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+
 # Properties
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+TARGET_SYSTEM_PROP := device/lenovo/p2a42/system.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
@@ -148,14 +151,16 @@ TARGET_POWERHAL_VARIANT := qcom
 TARGET_RIL_VARIANT := caf
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/ramdisk/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/lenovo/p2a42/rootdir/ramdisk/fstab.qcom
 
 # Sensor
 USE_SENSOR_MULTI_HAL := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+
+#BOARD_SEPOLICY_DIRS += \
+#    device/lenovo/p2a42/sepolicy
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
