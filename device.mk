@@ -67,12 +67,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-# ANT
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library \
-    libantradio
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -89,8 +83,17 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudio-resampler \
     libqcomvisualizer \
+    libvolumelistener \
     libqcomvoiceprocessing \
     libqcompostprocbundle
+    
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+   
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl
 
 # Audio configuration [p2a42]
 PRODUCT_COPY_FILES += \
@@ -135,7 +138,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera@2.4-impl \
     android.hardware.camera.provider@2.4-impl \
     libbson \
     Snap
@@ -163,8 +165,8 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # Doze
-PRODUCT_PACKAGES += \
-    LenovoDoze
+#PRODUCT_PACKAGES += \
+#    LenovoDoze
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -189,8 +191,12 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.fingerprintd@1.0-impl \
+    android.hardware.biometrics.fingerprint@2.1-service \
     fingerprintd
+    
+# For config.fs
+PRODUCT_PACKAGES += \
+    fs_config_files
 
 # USB HAL
 PRODUCT_PACKAGES += \
@@ -206,7 +212,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gps@1.0-impl \
+    android.hardware.gnss@1.0-impl \
     gps.msm8953 \
     libgnsspps \
     libcurl
@@ -328,7 +334,7 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-	wificond \
+    wificond \
     ipacm \
     ipacm-diag \
     IPACM_cfg.xml \
