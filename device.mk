@@ -34,7 +34,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -290,6 +289,14 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     power.msm8953
 
+# Jelly package
+PRODUCT_PACKAGES += \
+    Jelly
+
+# Charging Mode
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite
@@ -358,12 +365,12 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
 
 PRODUCT_COPY_FILES += \
-    device/lenovo/p2a42/wifi/fstman.ini:system/etc/wifi/fstman.ini \
+    device/lenovo/p2a42/wifi/fstman.ini:system/vendor/etc/wifi/fstman.ini \
     device/lenovo/p2a42/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
     device/lenovo/p2a42/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     device/lenovo/p2a42/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    device/lenovo/p2a42/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/lenovo/p2a42/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
+    device/lenovo/p2a42/wifi/p2p_supplicant_overlay.conf:system/vendor/etc/wifi/p2p_supplicant_overlay.conf \
+    device/lenovo/p2a42/wifi/wpa_supplicant_overlay.conf:system/vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_COPY_FILES += \
     kernel/lenovo/msm8953/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
