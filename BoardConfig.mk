@@ -81,6 +81,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
+TARGET_TAP_TO_WAKE_NODE := "/sys/board_properties/tpd_suspend_status"
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 
 # CNE / DPM
