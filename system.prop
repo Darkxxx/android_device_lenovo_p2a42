@@ -89,6 +89,9 @@ ro.sys.fw.bservice_age=5000
 # Fingerprint
 persist.qfp=false
 
+# Omx
+persist.media.treble_omx=false
+
 # Fm
 ro.fm.transmitter=false
 
