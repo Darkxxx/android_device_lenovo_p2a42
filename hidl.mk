@@ -25,10 +25,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.light@2.0-impl
 
-#PRODUCT_PACKAGES += \
-    vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl
@@ -53,9 +49,8 @@ PRODUCT_PACKAGES += \
 
 #Nfc
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    vendor.nxp.hardware.nfc@1.0-impl
-
+    android.hardware.nfc@1.0-impl
+ 
 #Omx
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl
