@@ -20,6 +20,9 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 $(call inherit-product, vendor/lenovo/p2a42/p2a42-vendor.mk)
+$(call inherit-product, device/lenovo/p2a42/hidl.mk)
+
+TARGET_FS_CONFIG_GEN := device/Lenovo/p2a42/config.fs
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -68,9 +71,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.soundtrigger@2.0-impl \
     audiod \
     cplay \
     tinycap \
@@ -85,10 +85,6 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     libqcomvoiceprocessing \
     libqcompostprocbundle
-    
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl
 
 # Audio configuration [p2a42]
 PRODUCT_COPY_FILES += \
@@ -133,8 +129,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl \
     libbson \
     Snap
 
@@ -148,11 +142,6 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.mapper@2.0-impl \
-    android.hardware.graphics.composer@2.1-impl \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.memtrack@1.0-impl \
     gralloc.msm8953 \
     copybit.msm8953 \
     hwcomposer.msm8953 \
@@ -163,6 +152,10 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     LenovoDoze
+ 
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -183,21 +176,14 @@ PRODUCT_PACKAGES += \
     
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
     libbt-vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
     fingerprintd
-
-# USB HAL
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
 
 # FM
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0-impl \
     FM2 \
     libqcomfm_jni \
     libfmjni \
@@ -205,22 +191,21 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
     gps.msm8953 \
     libgnsspps \
     libcurl
 
 PRODUCT_COPY_FILES += \
-    device/lenovo/p2a42/gps/flp.conf:system/etc/flp.conf \
-    device/lenovo/p2a42/gps/gps.conf:system/etc/gps.conf \
-    device/lenovo/p2a42/gps/izat.conf:system/etc/izat.conf \
-    device/lenovo/p2a42/gps/lowi.conf:system/etc/lowi.conf \
-    device/lenovo/p2a42/gps/sap.conf:system/etc/sap.conf \
-    device/lenovo/p2a42/gps/xtwifi.conf:system/etc/xtwifi.conf \
+    device/lenovo/p2a42/gps/flp.conf:system/vendor/etc/flp.conf \
+    device/lenovo/p2a42/gps/gps.conf:system/vendor/etc/gps.conf \
+    device/lenovo/p2a42/gps/izat.conf:system/vendor/etc/izat.conf \
+    device/lenovo/p2a42/gps/lowi.conf:system/vendor/etc/lowi.conf \
+    device/lenovo/p2a42/gps/sap.conf:system/vendor/etc/sap.conf \
+    device/lenovo/p2a42/gps/xtwifi.conf:system/vendor/etc/xtwifi.conf \
 
 # IPC Router
 PRODUCT_COPY_FILES += \
-    device/lenovo/p2a42/configs/sec_config:system/etc/sec_config \
+    device/lenovo/p2a42/configs/sec_config:system/vendor/etc/sec_config \
     device/lenovo/p2a42/configs/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf
 
 # Keylayout
@@ -234,7 +219,6 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl \
     lights.msm8953
 
 # Media
@@ -254,7 +238,6 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
     com.android.nfc_extras \
     NfcNci \
     nfc_nci.bcm2079x.default \
@@ -280,7 +263,6 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
     power.msm8953
 
 # Jelly package
@@ -315,26 +297,20 @@ PRODUCT_COPY_FILES += \
 
 # Sensor
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
     sensors.msm8953
-    
- # Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl
 
 # Sensor Configurations
 PRODUCT_COPY_FILES += \
-    device/lenovo/p2a42/sensors/hals.conf:system/etc/sensors/hals.conf \
-    device/lenovo/p2a42/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    device/lenovo/p2a42/sensors/apdr.conf:system/etc/apdr.conf
+    device/lenovo/p2a42/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
+    device/lenovo/p2a42/sensors/sensor_def_qcomdev.conf:system/vendor/etc/sensors/sensor_def_qcomdev.conf \
+    device/lenovo/p2a42/sensors/apdr.conf:system/vendor/etc/apdr.conf
 
 # Thermal
 PRODUCT_COPY_FILES += \
-    device/lenovo/p2a42/configs/thermal-engine.conf:system/etc/thermal-engine.conf
+    device/lenovo/p2a42/configs/thermal-engine.conf:system/vendor/etc/thermal-engine.conf
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
     wificond \
     ipacm \
     ipacm-diag \
@@ -353,16 +329,12 @@ PRODUCT_PACKAGES += \
 # Manifest
 PRODUCT_COPY_FILES += \
     device/lenovo/p2a42/manifest.xml:system/vendor/manifest.xml
-    
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl
 
 PRODUCT_COPY_FILES += \
     device/lenovo/p2a42/wifi/fstman.ini:system/vendor/etc/wifi/fstman.ini \
-    device/lenovo/p2a42/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lenovo/p2a42/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lenovo/p2a42/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/lenovo/p2a42/wifi/hostapd.accept:system/vendor/etc/hostapd/hostapd.accept \
+    device/lenovo/p2a42/wifi/hostapd_default.conf:system/vendor/etc/hostapd/hostapd_default.conf \
+    device/lenovo/p2a42/wifi/hostapd.deny:system/vendor/etc/hostapd/hostapd.deny \
     device/lenovo/p2a42/wifi/p2p_supplicant_overlay.conf:system/vendor/etc/wifi/p2p_supplicant_overlay.conf \
     device/lenovo/p2a42/wifi/wpa_supplicant_overlay.conf:system/vendor/etc/wifi/wpa_supplicant_overlay.conf
 
@@ -370,7 +342,7 @@ PRODUCT_COPY_FILES += \
     kernel/lenovo/msm8953/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     device/lenovo/p2a42/wifi/WCNSS_qcom_wlan_nv_lenovo.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_lenovo.bin \
     device/lenovo/p2a42/wifi/WCNSS_wlan_dictionary_lenovo.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary_lenovo.dat \
-    device/lenovo/p2a42/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+    device/lenovo/p2a42/wifi/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
