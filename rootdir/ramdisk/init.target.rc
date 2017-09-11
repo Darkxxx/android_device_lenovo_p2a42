@@ -173,7 +173,7 @@ on boot
     chmod 0666 /sys/class/power_supply/ext-charger/otg_usb_short
 #lenovo-sw weiweij added for file point access end
 
-service wcnss-service /system/bin/wcnss_service
+service wcnss-service /system//vendor/bin/wcnss_service
     class main
     user system
     group system wifi radio
@@ -185,7 +185,7 @@ service imsqmidaemon /system/bin/imsqmidaemon
     socket ims_qmid stream 0660 system radio
     group radio net_raw log diag
 
-service imsdatadaemon /system/bin/imsdatadaemon
+service imsdatadaemon /system/vendor/bin/imsdatadaemon
     class main
     user system
     socket ims_datad stream 0660 system radio
@@ -195,7 +195,7 @@ service imsdatadaemon /system/bin/imsdatadaemon
 on property:sys.ims.QMI_DAEMON_STATUS=1
     start imsdatadaemon
 
-service ims_rtp_daemon /system/bin/ims_rtp_daemon
+service ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
    class main
    user system
    socket ims_rtpd stream 0660 system radio
@@ -296,7 +296,7 @@ service adsprpcd /system/bin/adsprpcd
 on property:init.svc.dts_configurator=stopped
     start dtseagleservice
 
-service per_mgr /system/bin/pm-service
+service per_mgr /system/vendor/bin/pm-service
     class core
     user system
     group system net_raw
