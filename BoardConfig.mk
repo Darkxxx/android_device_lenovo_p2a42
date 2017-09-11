@@ -63,6 +63,9 @@ BOARD_USES_ALSA_AUDIO := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lenovo/p2a42/bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -159,10 +162,10 @@ TARGET_RECOVERY_FSTAB := device/lenovo/p2a42/rootdir/ramdisk/fstab.qcom
 USE_SENSOR_MULTI_HAL := true
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += \
-#    device/lenovo/p2a42/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    device/lenovo/p2a42/sepolicy
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
