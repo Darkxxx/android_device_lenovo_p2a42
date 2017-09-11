@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
+    android.hardware.soundtrigger@2.0-impl \
     audiod \
     cplay \
     tinycap \
@@ -133,6 +134,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     libbson \
     Snap
 
@@ -159,8 +161,8 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # Doze
-#PRODUCT_PACKAGES += \
-#    LenovoDoze
+PRODUCT_PACKAGES += \
+    LenovoDoze
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -181,16 +183,13 @@ PRODUCT_PACKAGES += \
     
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl
+    android.hardware.bluetooth@1.0-impl \
+    libbt-vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
     fingerprintd
-    
-# For config.fs
-PRODUCT_PACKAGES += \
-    fs_config_files
 
 # USB HAL
 PRODUCT_PACKAGES += \
