@@ -167,11 +167,12 @@ TARGET_RECOVERY_FSTAB := device/lenovo/p2a42/rootdir/ramdisk/fstab.qcom
 USE_SENSOR_MULTI_HAL := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    device/lenovo/p2a42/sepolicy
+# BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
+# Wifi
+    
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
