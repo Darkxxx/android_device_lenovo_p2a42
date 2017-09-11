@@ -63,13 +63,13 @@ if [ "$wlanchip" == "AR6004-USB" ]; then
     setprop wlan.driver.ath 2
     setprop qcom.bluetooth.soc ath3k
     setprop wlan.driver.name /system/lib/modules/ath6kl-3.5/ath6kl_usb.ko
-    setprop wlan.supp.template /system/etc/wifi/wpa_supplicant_ath6kl.conf
+    setprop wlan.supp.template /system/vendor/etc/wifi/wpa_supplicant_ath6kl.conf
     btsoc="ath3k"
 elif [ "$wlanchip" == "AR6004-SDIO" ]; then
     setprop wlan.driver.ath 2
     setprop qcom.bluetooth.soc ath3k
     setprop wlan.driver.name /system/lib/modules/ath6kl-3.5/ath6kl_sdio.ko
-    setprop wlan.supp.template /system/etc/wifi/wpa_supplicant_ath6kl.conf
+    setprop wlan.supp.template /system/vendor/etc/wifi/wpa_supplicant_ath6kl.conf
     btsoc="ath3k"
 
     # Chown polling nodes as needed from UI running on system server
