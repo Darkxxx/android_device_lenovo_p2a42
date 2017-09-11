@@ -217,6 +217,12 @@ ro.cutoff_voltage_mv=3400
 ro.core_ctl_min_cpu=2
 ro.core_ctl_max_cpu=4
 
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+# NFC
+persist.nfc.smartcard.config=SIM1,eSE1
+
 # Battery 
 pm.sleep_mode=1
 ro.com.google.networklocation=1
