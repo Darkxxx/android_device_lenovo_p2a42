@@ -3,17 +3,17 @@ value:2901
 
 [vendor/bin/wcnss_filter]
 mode: 0755
-user: AID_BLUETOOTH
-group: AID_BLUETOOTH
+user: AID_WİFİ
+group: AID_WİFİ
 caps: BLOCK_SUSPEND
 
-[system/vendor/bin/wcnss_filter]
+[system/bin/wcnss_filter]
 mode: 0755
-user: AID_BLUETOOTH
-group: AID_BLUETOOTH
+user: AID_WİFİ
+group: AID_WİFİ
 caps: BLOCK_SUSPEND
 
-[system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti]
+[system/bin/hw/android.hardware.bluetooth@1.0-service-qti]
 mode: 0755
 user: AID_BLUETOOTH
 group: AID_BLUETOOTH
@@ -27,17 +27,17 @@ caps: BLOCK_SUSPEND NET_ADMIN
 
 [system/bin/cnss-daemon]
 mode: 0755
-user: AID_BLUETOOTH
-group: AID_BLUETOOTH
+user: AID_WİFİ
+group: AID_WİFİ
+caps: NET_BIND_SERVICE
+
+[vendor/bin/cnss-daemon]
+mode: 0755
+user: AID_WİFİ
+group: AID_WİFİ
 caps: NET_BIND_SERVICE
 
 [vendor/bin/pm-service]
-mode: 0755
-user: AID_SYSTEM
-group: AID_SYSTEM
-caps: NET_BIND_SERVICE
-
-[system/vendor/bin/pm-service]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
@@ -49,7 +49,7 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[system/vendor/bin/imsdatadaemon]
+[system/bin/imsdatadaemon]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
@@ -61,7 +61,7 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[system/vendor/bin/cnd]
+[system/bin/cnd]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
@@ -73,7 +73,7 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE BLOCK_SUSPEND NET_ADMIN
 
-[system/vendor/bin/ims_rtp_daemon]
+[system/bin/ims_rtp_daemon]
 mode: 0755
 user: AID_SYSTEM
 group: AID_RADIO
@@ -85,7 +85,7 @@ user: AID_SYSTEM
 group: AID_RADIO
 caps: NET_BIND_SERVICE
 
-[system/vendor/bin/slim_daemon]
+[system/bin/slim_daemon]
 mode: 0755
 user:  AID_GPS
 group: AID_GPS
