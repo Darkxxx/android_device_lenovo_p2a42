@@ -1,5 +1,5 @@
 # ADSP
-system/bin/adsprpcd
+bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libmdsprpc.so
@@ -26,7 +26,7 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 
 # Audio
-system/lib/hw/audio.primary.msm8953.so
+lib/hw/audio.primary.msm8953.so
 vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
@@ -47,7 +47,7 @@ vendor/lib/libaudiodevarb.so
 vendor/lib/libdrc.so
 vendor/lib/libqct_resampler.so
 vendor/lib/libsurround_3mic_proc.so
-system/lib64/hw/audio.primary.msm8953.so
+lib64/hw/audio.primary.msm8953.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
@@ -63,105 +63,105 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudiodevarb.so
 vendor/etc/audio_effects.conf
 vendor/etc/audio_output_policy.conf
-system/etc/drc/drc_cfg_5.1.txt
-syatem/etc/drc/drc_cfg_AZ.txt
-system/etc/speaker.ftcfg
-system/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
-system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
-system/etc/mixer_paths_mtp.xml
-system/etc/mixer_paths.xml
-system/etc/mixer_paths_skuk.xml
+etc/drc/drc_cfg_5.1.txt
+etc/drc/drc_cfg_AZ.txt
+etc/speaker.ftcfg
+etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+etc/mixer_paths_mtp.xml
+etc/mixer_paths.xml
+etc/mixer_paths_skuk.xml
 vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/capability.xml
 vendor/etc/default_volume_tables.xml
 vendor/etc/r_submix_audio_policy_configuration.xml
-system/etc/usb_audio_policy_configuration.xml
-system/etc/aanc_tuning_mixer.txt
-system/etc/mixer_paths_qrd_sku3.xml
-system/etc/mixer_paths_qrd_skuh.xml
-system/etc/mixer_paths_qrd_skui.xml
-system/etc/mixer_paths_qrd_skum.xml
-system/etc/mixer_paths_qrd_skun.xml
-system/etc/mixer_paths_qrd_skuhf.xml
-system/etc/sound_trigger_mixer_paths.xml
-system/etc/audio_policy.conf
-system/etc/audio_policy_configuration.xml
-system/etc/audio_platform_info.xml
-system/etc/audio_platform_info_extcodec.xml
-system/etc/mixer_paths_wcd9306.xml
-system/etc/mixer_paths_wcd9326.xml
-system/etc/mixer_paths_wcd9330.xml
-system/etc/mixer_paths_wcd9335.xml
-system/etc/sound_trigger_mixer_paths_wcd9306.xml
-system/etc/sound_trigger_mixer_paths_wcd9330.xml
-system/etc/sound_trigger_mixer_paths_wcd9335.xml
-system/etc/sound_trigger_platform_info.xml
+vendor/etc/usb_audio_policy_configuration.xml
+etc/aanc_tuning_mixer.txt
+etc/mixer_paths_qrd_sku3.xml
+etc/mixer_paths_qrd_skuh.xml
+etc/mixer_paths_qrd_skui.xml
+etc/mixer_paths_qrd_skum.xml
+etc/mixer_paths_qrd_skun.xml
+etc/mixer_paths_qrd_skuhf.xml
+etc/sound_trigger_mixer_paths.xml
+etc/audio_policy.conf
+etc/audio_policy_configuration.xml
+etc/audio_platform_info.xml
+etc/audio_platform_info_extcodec.xml
+etc/mixer_paths_wcd9306.xml
+etc/mixer_paths_wcd9326.xml
+etc/mixer_paths_wcd9330.xml
+etc/mixer_paths_wcd9335.xml
+etc/sound_trigger_mixer_paths_wcd9306.xml
+etc/sound_trigger_mixer_paths_wcd9330.xml
+etc/sound_trigger_mixer_paths_wcd9335.xml
+etc/sound_trigger_platform_info.xml
 
 # Audio ACDB
-system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-system/etc/acdbdata/MTP/MTP_General_cal.acdb
-system/etc/acdbdata/MTP/MTP_Global_cal.acdb
-system/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-system/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_Bluetooth_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_General_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_Global_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_Handset_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_Hdmi_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_Headset_cal.acdb
-system/etc/acdbdata/MTP_NON_CE/MTP_Headset_cal.acdb
-system/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-system/etc/acdbdata/QRD/QRD_General_cal.acdb
-system/etc/acdbdata/QRD/QRD_Global_cal.acdb
-system/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-system/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-system/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-system/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/MTP_Global_cal.acdb
+etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/MTP_Headset_cal.acdb
+etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_General_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_Global_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_Handset_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_Headset_cal.acdb
+etc/acdbdata/MTP_NON_CE/MTP_Headset_cal.acdb
+etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+etc/acdbdata/QRD/QRD_General_cal.acdb
+etc/acdbdata/QRD/QRD_Global_cal.acdb
+etc/acdbdata/QRD/QRD_Handset_cal.acdb
+etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+etc/acdbdata/QRD/QRD_Headset_cal.acdb
+etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
 # Bluetooth
-system/bin/btnvtool
-system/bin/hci_qcomm_init
+bin/btnvtool
+bin/hci_qcomm_init
 vendor/bin/wcnss_filter
 
 # Bluetooth firmware
-system/etc/firmware/nvm_tlv_1.3.bin
-system/etc/firmware/nvm_tlv_2.1.bin
-system/etc/firmware/nvm_tlv_3.0.bin
-system/etc/firmware/nvm_tlv_3.2.bin
-system/etc/firmware/nvm_tlv.bin
-system/etc/firmware/rampatch_tlv_1.3.tlv
-system/etc/firmware/rampatch_tlv_2.1.tlv
-system/etc/firmware/rampatch_tlv_3.0.tlv
-system/etc/firmware/rampatch_tlv_3.2.tlv
-system/etc/firmware/rampatch_tlv.img
+etc/firmware/nvm_tlv_1.3.bin
+etc/firmware/nvm_tlv_2.1.bin
+etc/firmware/nvm_tlv_3.0.bin
+etc/firmware/nvm_tlv_3.2.bin
+etc/firmware/nvm_tlv.bin
+etc/firmware/rampatch_tlv_1.3.tlv
+etc/firmware/rampatch_tlv_2.1.tlv
+etc/firmware/rampatch_tlv_3.0.tlv
+etc/firmware/rampatch_tlv_3.2.tlv
+etc/firmware/rampatch_tlv.img
 
 # Camera
-system/bin/mm-qcamera-daemon
-system/vendor/lib/libfastcvopt.so
-system/vendor/lib/libmmipl.so
-syatem/lib/hw/camera.msm8953.so
-system/lib/libmmjpeg_interface.so
-system/lib/libmm-qcamera.so
-system/lib/libmmcamera_interface.so
-system/lib/libarcsoft_beautyshot.so
-system/lib/libmpbase.so
-system/lib/libivc_smartengine.so
-system/lib/libqomx_core.so
-system/lib/libarcsoft_hdr.so
-system/lib/libarcsoft_beautyshot.so
-system/lib/libarcsoft_night_shot.so
-system/lib/libarcsoft_panorama_burstcapture.so
+bin/mm-qcamera-daemon
+vendor/lib/libfastcvopt.so
+vendor/lib/libmmipl.so
+lib/hw/camera.msm8953.so
+lib/libmmjpeg_interface.so
+lib/libmm-qcamera.so
+lib/libmmcamera_interface.so
+lib/libarcsoft_beautyshot.so
+lib/libmpbase.so
+lib/libivc_smartengine.so
+lib/libqomx_core.so
+lib/libarcsoft_hdr.so
+lib/libarcsoft_beautyshot.so
+lib/libarcsoft_night_shot.so
+lib/libarcsoft_panorama_burstcapture.so
 vendor/lib/libllvd_smore.so
 vendor/lib/libllvd_sw_tnr.so
 vendor/lib/libChamomilePA.so
 vendor/lib/libcamera_bm_algo.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libchromaflash.so
-vendor/lib/libts_detected_face_hal.so
-vendor/lib/libts_face_beautify_hal.so
+-vendor/lib/libts_detected_face_hal.so
+-vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libmotocalibration.so
 vendor/lib/libmmcamera_isp_color_correct40.so
 vendor/lib/libmmcamera2_pproc_modules.so
@@ -266,17 +266,17 @@ vendor/lib64/libmmsw_detail_enhancement.so
 vendor/lib64/libmmsw_math.so
 vendor/lib64/libmmsw_opencl.so
 vendor/lib64/libmmsw_platform.so
-system/etc/camera/lenovo_kuntao_camera.xml
+etc/camera/lenovo_kuntao_camera.xml
 
 # Camera actuators
 vendor/lib/libactuator_dw9767_kuntaoof.so
 vendor/lib/libactuator_dw9767_kuntaosy.so
 
 # Chromatix
-system/etc/camera/imx258_kuntaoof_chromatix.xml
-system/etc/camera/imx258_kuntaosy_chromatix.xml
-system/etc/camera/ov5695_kuntaoof_chromatix.xml
-system/etc/camera/ov5695_kuntaosy_chromatix.xml
+etc/camera/imx258_kuntaoof_chromatix.xml
+etc/camera/imx258_kuntaosy_chromatix.xml
+etc/camera/ov5695_kuntaoof_chromatix.xml
+etc/camera/ov5695_kuntaosy_chromatix.xml
 vendor/lib/libchromatix_imx258_kuntaoof_default_video.so
 vendor/lib/libchromatix_imx258_kuntaosy_postproc.so
 vendor/lib/libchromatix_ov5695_kuntaoof_cpp_liveshot.so
@@ -366,45 +366,45 @@ vendor/lib/libchromatix_imx258_kuntaoof_preview.so
 vendor/lib/libchromatix_imx258_kuntaoof_video_4k.so
 
 # Camera firmware
-system/etc/firmware/cpp_firmware_v1_5_2.fw
-system/etc/firmware/cpp_firmware_v1_6_0.fw
-system/etc/firmware/cpp_firmware_v1_5_0.fw
-system/etc/firmware/cpp_firmware_v1_1_1.fw
-system/etc/firmware/cpp_firmware_v1_8_0.fw
-system/etc/firmware/cpp_firmware_v1_10_0.fw
-system/etc/firmware/cpp_firmware_v1_1_6.fw
-system/etc/firmware/cpp_firmware_v1_2_0.fw
-system/etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw
 
 # Charger
-system/bin/hvdcp_opti
+bin/hvdcp_opti
 
 # CNE
 vendor/bin/cnd
-system/etc/cne/andsfCne.xml
-system/etc/cne/SwimConfig.xml
-system/etc/cne/wqeclient/ATT/ATT_profile1.xml
-system/etc/cne/wqeclient/ATT/ATT_profile2.xml
-system/etc/cne/wqeclient/ATT/ATT_profile3.xml
-system/etc/cne/wqeclient/ATT/ATT_profile4.xml
-system/etc/cne/wqeclient/ROW/ROW_profile1.xml
-system/etc/cne/wqeclient/ROW/ROW_profile2.xml
-system/etc/cne/wqeclient/ROW/ROW_profile3.xml
-system/etc/cne/wqeclient/ROW/ROW_profile4.xml
-system/etc/cne/wqeclient/ROW/ROW_profile5.xml
-system/etc/cne/wqeclient/VZW/VZW_profile1.xml
-system/etc/cne/wqeclient/VZW/VZW_profile2.xml
-system/etc/cne/wqeclient/VZW/VZW_profile3.xml
-system/etc/cne/wqeclient/VZW/VZW_profile4.xml
-system/etc/cne/wqeclient/VZW/VZW_profile5.xml
-system/etc/cne/wqeclient/VZW/VZW_profile6.xml
-system/etc/permissions/ConnectivityExt.xml
-system/etc/permissions/cneapiclient.xml
-system/etc/permissions/com.quicinc.cne.xml
-system/framework/ConnectivityExt.jar|67025d09bbc7bb87bca1d15ab9c133eeb1ef2b9d
-system/framework/cneapiclient.jar|3cb56a579341acfb16d2be2e41bac2c7b6ac34b4
-system/framework/com.quicinc.cne.jar|2be59f78be920f93e68d5d6bdccaf5ada190744e
-system/priv-app/CNEService/CNEService.apk|dccff21ad25991c9128138e7485327b92f93f296
+etc/cne/andsfCne.xml
+etc/cne/SwimConfig.xml
+etc/cne/wqeclient/ATT/ATT_profile1.xml
+etc/cne/wqeclient/ATT/ATT_profile2.xml
+etc/cne/wqeclient/ATT/ATT_profile3.xml
+etc/cne/wqeclient/ATT/ATT_profile4.xml
+etc/cne/wqeclient/ROW/ROW_profile1.xml
+etc/cne/wqeclient/ROW/ROW_profile2.xml
+etc/cne/wqeclient/ROW/ROW_profile3.xml
+etc/cne/wqeclient/ROW/ROW_profile4.xml
+etc/cne/wqeclient/ROW/ROW_profile5.xml
+etc/cne/wqeclient/VZW/VZW_profile1.xml
+etc/cne/wqeclient/VZW/VZW_profile2.xml
+etc/cne/wqeclient/VZW/VZW_profile3.xml
+etc/cne/wqeclient/VZW/VZW_profile4.xml
+etc/cne/wqeclient/VZW/VZW_profile5.xml
+etc/cne/wqeclient/VZW/VZW_profile6.xml
+etc/permissions/ConnectivityExt.xml
+etc/permissions/cneapiclient.xml
+etc/permissions/com.quicinc.cne.xml
+-framework/ConnectivityExt.jar|67025d09bbc7bb87bca1d15ab9c133eeb1ef2b9d
+-framework/cneapiclient.jar|3cb56a579341acfb16d2be2e41bac2c7b6ac34b4
+-framework/com.quicinc.cne.jar|2be59f78be920f93e68d5d6bdccaf5ada190744e
+-priv-app/CNEService/CNEService.apk|dccff21ad25991c9128138e7485327b92f93f296
 vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneqmiutils.so
@@ -417,18 +417,18 @@ vendor/lib64/libvendorconn.so
 vendor/lib64/libwqe.so
 
 # Display Color Calibration
-vendor/app/colorservice/colorservice.apk|ec71d604220c9e0e1d481f7c66fd3bacdea82331
-system/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_549.xml
+-vendor/app/colorservice/colorservice.apk|ec71d604220c9e0e1d481f7c66fd3bacdea82331
+-etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_549.xml
 
 # DPM
-system/bin/dpmd
-system/etc/dpm/dpm.conf
-system/etc/dpm/nsrm/NsrmConfiguration.xml
-system/etc/permissions/com.qti.dpmframework.xml
-system/etc/permissions/dpmapi.xml
-system/ramework/com.qti.dpmframework.jar|7d855e9cf5d10cd88cdcd9c9bd16120afcaa7e72
-system/ramework/dpmapi.jar|0015235ff71d52d1b340b10ce4fa737fa26975ef
-system/framework/tcmclient.jar|e7149c664f4b1841139ab816c0d4e0942df0583c
+bin/dpmd
+etc/dpm/dpm.conf
+etc/dpm/nsrm/NsrmConfiguration.xml
+etc/permissions/com.qti.dpmframework.xml
+etc/permissions/dpmapi.xml
+-framework/com.qti.dpmframework.jar|7d855e9cf5d10cd88cdcd9c9bd16120afcaa7e72
+-framework/dpmapi.jar|0015235ff71d52d1b340b10ce4fa737fa26975ef
+-framework/tcmclient.jar|e7149c664f4b1841139ab816c0d4e0942df0583c
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
 vendor/lib/libdpmframework.so
@@ -441,7 +441,7 @@ vendor/lib64/libdpmnsrm.so
 vendor/lib64/libdpmtcm.so
 
 # DRM
-system/bin/qseecomd
+bin/qseecomd
 vendor/bin/qseeproxydaemon
 vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
@@ -478,76 +478,76 @@ vendor/lib64/libqisl.so
 vendor/lib64/libtzdrmgenprov.so
 
 # EMMC
-system/etc/firmware/emmc_ffu_15_RX14MB.fw
+etc/firmware/emmc_ffu_15_RX14MB.fw
 
-# Smart harfleri
-system/bin/smart_charger
+# Smart charger
+bin/smart_charger
 
 # Fingerprint
-system/bin/vfmAPITest
-system/bin/vfmService
-system/bin/vfmExTest
-system/bin/synaFpTestHalTest
-system/bin/libvcsfp.so
-system/lib/libsynaFpTestHal.so
-system/lib/libvfmClient.so
-system/lib/libvfmtztransport.so
-system/lib/libvalAuth.so
-system/lib64/libvcsfp.so
-system/lib64/libsynaFpTestHal.so
-system/lib64/hw/fingerprint.default.so
-system/lib64/libvfmClient.so
-system/lib64/libvfmtztransport.so
-system/lib64/libvalAuth.so
-system/lib64/libvfmAuth.so
-system/etc/firmware/synaptics-s3508-16060806-kuntao.tdat
-system/etc/firmware/synaptics-s3508-16062306-kuntao.tdat
-system/etc/firmware/synaptics-s3508-16071507-kuntao.tdat
-system/etc/firmware/synaptics-s3508-16080201-kuntao.tdat
-system/etc/firmware/synaptics-s3508-16081202-kuntao.tdat
-system/etc/firmware/synaptics-s3508-16082202-kuntao.tdat
-system/etc/firmware/synaptics-s3508sga-16060806-kuntao.tdat
-system/etc/firmware/synaptics-s3508sga-16062306-kuntao.tdat
-system/etc/firmware/synaptics-s3508sga-16071507-kuntao.tdat
-system/etc/firmware/synaptics-s3508sga-16080201-kuntao.tdat
-system/etc/firmware/synaptics-s3508sga-16081202-kuntao.tdat
-system/etc/firmware/synaptics-s3508sga-16082202-kuntao.tdat
+bin/vfmAPITest
+bin/vfmService
+bin/vfmExTest
+bin/synaFpTestHalTest
+lib/libvcsfp.so
+lib/libsynaFpTestHal.so
+lib/libvfmClient.so
+lib/libvfmtztransport.so
+lib/libvalAuth.so
+lib64/libvcsfp.so
+lib64/libsynaFpTestHal.so
+lib64/hw/fingerprint.default.so
+lib64/libvfmClient.so
+lib64/libvfmtztransport.so
+lib64/libvalAuth.so
+lib64/libvfmAuth.so
+etc/firmware/synaptics-s3508-16060806-kuntao.tdat
+etc/firmware/synaptics-s3508-16062306-kuntao.tdat
+etc/firmware/synaptics-s3508-16071507-kuntao.tdat
+etc/firmware/synaptics-s3508-16080201-kuntao.tdat
+etc/firmware/synaptics-s3508-16081202-kuntao.tdat
+etc/firmware/synaptics-s3508-16082202-kuntao.tdat
+etc/firmware/synaptics-s3508sga-16060806-kuntao.tdat
+etc/firmware/synaptics-s3508sga-16062306-kuntao.tdat
+etc/firmware/synaptics-s3508sga-16071507-kuntao.tdat
+etc/firmware/synaptics-s3508sga-16080201-kuntao.tdat
+etc/firmware/synaptics-s3508sga-16081202-kuntao.tdat
+etc/firmware/synaptics-s3508sga-16082202-kuntao.tdat
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8953.so
 vendor/lib64/hw/gatekeeper.msm8953.so
 
 # GPS
-system/bin/loc_launcher
-system/bin/xtwifi-client
-system/bin/xtwifi-inet-agent
-system/bin/gpsone_daemon
-system/bin/garden_app
-system/bin/lowi-server
-system/bin/cacert_location.pem
-system/bin/xtra_root_cert.pem
-system/etc/permissions/com.qti.location.sdk.xml
-system/etc/permissions/com.qualcomm.location.vzw_library.xml
-system/etc/permissions/com.qualcomm.location.xml
-system/etc/permissions/izat.xt.srv.xml
-system/priv-app/com.qualcomm.location/com.qualcomm.location.apk|c6d4db563ade42f1b275cc35a830afbeebb7a2bd
-system/framework/com.qti.location.sdk.jar|63b3874e7275a572a25b248ab510b3b96b6fa915
-system/framework/com.qualcomm.location.vzw_library.jar|55577447c6a28fe370a4ba3bed128e17516e0774
-system/framework/izat.xt.srv.jar|da31c6183f8d29251ce5656ddab6d4b386934382
-system/lib/libloc_api_v02.so
-system/lib/libloc_ds_api.so
-system/lib/libloc_pla.so
-system/lib/libloc_stub.so
-system/lib/libunwind.so
-system/lib/libloc_eng.so
-system/lib/libloc_core.so
-system/lib/libloc_api_v02.so
-system/lib/libloc_ds_api.so
-system/lib/libloc_pla.so
-system/lib/libloc_stub.so
-system/lib/libunwind.so
-system/lib/libloc_eng.so
-system/lib64/libloc_core.so
+bin/loc_launcher
+bin/xtwifi-client
+bin/xtwifi-inet-agent
+bin/gpsone_daemon
+bin/garden_app
+bin/lowi-server
+etc/cacert_location.pem
+etc/xtra_root_cert.pem
+etc/permissions/com.qti.location.sdk.xml
+etc/permissions/com.qualcomm.location.vzw_library.xml
+etc/permissions/com.qualcomm.location.xml
+etc/permissions/izat.xt.srv.xml
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk|c6d4db563ade42f1b275cc35a830afbeebb7a2bd
+-framework/com.qti.location.sdk.jar|63b3874e7275a572a25b248ab510b3b96b6fa915
+-framework/com.qualcomm.location.vzw_library.jar|55577447c6a28fe370a4ba3bed128e17516e0774
+-framework/izat.xt.srv.jar|da31c6183f8d29251ce5656ddab6d4b386934382
+lib/libloc_api_v02.so
+lib/libloc_ds_api.so
+lib/libloc_pla.so
+lib/libloc_stub.so
+lib/libunwind.so
+lib/libloc_eng.so
+lib/libloc_core.so
+lib64/libloc_api_v02.so
+lib64/libloc_ds_api.so
+lib64/libloc_pla.so
+lib64/libloc_stub.so
+lib64/libunwind.so
+lib64/libloc_eng.so
+lib64/libloc_core.so
 vendor/lib/hw/flp.default.so
 vendor/lib/libalarmservice_jni.so
 vendor/lib/libasn1cper.so
@@ -658,29 +658,29 @@ vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libmm-qdcm.so
 
 # Graphics firmware
-system/etc/firmware/a225p5_pm4.fw
-system/etc/firmware/a225_pfp.fw
-system/etc/firmware/a225_pm4.fw
-system/etc/firmware/a300_pfp.fw
-system/etc/firmware/a300_pm4.fw
-system/etc/firmware/a330_pfp.fw
-system/etc/firmware/a330_pm4.fw
-system/etc/firmware/a420_pfp.fw
-system/etc/firmware/a420_pm4.fw
-system/etc/firmware/a506_zap.b00
-system/etc/firmware/a506_zap.b01
-system/etc/firmware/a506_zap.b02
-system/etc/firmware/a506_zap.elf
-system/etc/firmware/a506_zap.mdt
-system/etc/firmware/a530_gpmu.fw2
-system/etc/firmware/a530_pfp.fw
-system/etc/firmware/a530_pm4.fw
-system/etc/firmware/a530v1_pfp.fw
-system/etc/firmware/a530v1_pm4.fw
-system/etc/firmware/a530v2_seq.fw2
-system/etc/firmware/a530v3_gpmu.fw2
-system/etc/firmware/a530v3_seq.fw2
-system/etc/firmware/a540_gpmu.fw2
+etc/firmware/a225p5_pm4.fw
+etc/firmware/a225_pfp.fw
+etc/firmware/a225_pm4.fw
+etc/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw
+etc/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw
+etc/firmware/a420_pfp.fw
+etc/firmware/a420_pm4.fw
+etc/firmware/a506_zap.b00
+etc/firmware/a506_zap.b01
+etc/firmware/a506_zap.b02
+etc/firmware/a506_zap.elf
+etc/firmware/a506_zap.mdt
+etc/firmware/a530_gpmu.fw2
+etc/firmware/a530_pfp.fw
+etc/firmware/a530_pm4.fw
+etc/firmware/a530v1_pfp.fw
+etc/firmware/a530v1_pm4.fw
+etc/firmware/a530v2_seq.fw2
+etc/firmware/a530v3_gpmu.fw2
+etc/firmware/a530v3_seq.fw2
+etc/firmware/a540_gpmu.fw2
 
 # Hbtp
 vendor/bin/hbtp_daemon
@@ -697,20 +697,20 @@ vendor/lib64/libhbtpfrmwk.so
 vendor/lib64/libhbtpclient.so
 
 # Hbtp firmware
-system/etc/firmware/hbtp/hbtpcfg.dat
-system/etc/firmware/hbtp/qtc800s_dsp.bin
+etc/firmware/hbtp/hbtpcfg.dat
+etc/firmware/hbtp/qtc800s_dsp.bin
 
 # IMS
-vendor/bin/ims_rtp_daemon|d5ed9cfbd0dd9f7d1abb7f8c9191760432af2985
-system/bin/imscmservice|f5ce2fb129e099c05cddec0702403ac6154550c5
-vendor/bin/imsdatadaemon|51b106a5a4ee93e7d7b9f769d0dc11b1ec2fab65
-system/bin/imsqmidaemon|befafd569749f93595f77713df0dec2321429d19
-system/bin/permissions/imscm.xml
-system/etc/permissions/qti-vzw-ims-internal.xml
-system/framework/imscmlibrary.jar|0c24d6540c06efede52169c1445272f43748180f
-system/framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
-vendor/app/ims/ims.apk|61f311759fd87b62e320c72d3917594d927e3373
-vendor/app/imssettings/imssettings.apk|84bdb8fec5f623d9d7030edfccc35bdfc7b0914f
+bin/ims_rtp_daemon|d5ed9cfbd0dd9f7d1abb7f8c9191760432af2985
+bin/imscmservice|f5ce2fb129e099c05cddec0702403ac6154550c5
+bin/imsdatadaemon|51b106a5a4ee93e7d7b9f769d0dc11b1ec2fab65
+bin/imsqmidaemon|befafd569749f93595f77713df0dec2321429d19
+etc/permissions/imscm.xml
+etc/permissions/qti-vzw-ims-internal.xml
+-framework/imscmlibrary.jar|0c24d6540c06efede52169c1445272f43748180f
+-framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
+-vendor/app/ims/ims.apk|61f311759fd87b62e320c72d3917594d927e3373
+-vendor/app/imssettings/imssettings.apk|84bdb8fec5f623d9d7030edfccc35bdfc7b0914f
 vendor/framework/qti-vzw-ims-internal.jar|7e945cb593192f65cfc2075c8c09f6c8eac608b1
 vendor/lib64/lib-dplmedia.so|08cc356e607834cea11a85d704eede3ebe4f2aa4
 vendor/lib64/lib-ims-rcscmjni.so|e61f46cd34da10ec7c20bbc281186e8f77f8504d
@@ -737,18 +737,18 @@ vendor/lib64/librcc.so|2f95ca3a5f6bd1bb94434918bad581cd35d80f1d
 vendor/lib64/libvoice-svc.so|259b062f54baabc9045dce02cc25263acd1436cd
 
 # IPA
-system/bin/ipacm-diag
+bin/ipacm-diag
 
 # keymaster
 vendor/lib/hw/keystore.msm8953.so
 vendor/lib64/hw/keystore.msm8953.so
 
 # Media
-system/lib/libOmxVpp.so
-system/lib/libstagefright_soft_flacdec.so
-system/lib/libvpplibrary.so
-system/lib64/libstagefright_soft_flacdec.so
-system/lib64/libvpplibrary.so
+lib/libOmxVpp.so
+lib/libstagefright_soft_flacdec.so
+lib/libvpplibrary.so
+lib64/libstagefright_soft_flacdec.so
+lib64/libvpplibrary.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libFlacSwDec.so
@@ -796,7 +796,7 @@ vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
 # Network
-system/priv-app/QtiTetherService/QtiTetherService.apk|a873344ec4f4c6c35a8902f3aec74ff8f472348c
+-priv-app/QtiTetherService/QtiTetherService.apk|a873344ec4f4c6c35a8902f3aec74ff8f472348c
 vendor/lib/libQtiTether.so
 vendor/lib/libconnctrl.so
 vendor/lib64/libQtiTether.so
@@ -804,14 +804,14 @@ vendor/lib64/libconnctrl.so
 
 # NFC
 vendor/firmware/BCM20797B0_002.001.043.0005.0010_Generic_NCD_Unsigned_configdata.ncd
-system/etc/libnfc-brcm.conf
-system/etc/libnfc-brcm-20797b00.conf
-system/etc/nfcee_access.xml
-vendor/lib64/hw/nfc_nci.bcm2079x.default.so
+etc/libnfc-brcm.conf
+etc/libnfc-brcm-20797b00.conf
+etc/nfcee_access.xml
+lib64/hw/nfc_nci.bcm2079x.default.so
 
 # Perf
-system/bin/energy-awareness
-system/bin/msm_irqbalance
+bin/energy-awareness
+bin/msm_irqbalance
 vendor/bin/perfd
 vendor/etc/msm_irqbalance.conf
 vendor/lib/libqti-iop.so
@@ -824,22 +824,22 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti_performance.so
 
 # Peripheral manager
-system/bin/pm-service
-system/bin/pm-proxy
+vendor/bin/pm-service
+bin/pm-proxy
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing
-system/framework/com.qti.snapdragon.sdk.display.jar|e6387246d96376fd832fdcf14b65e149b6333bb2
-system/etc/permissions/com.qti.snapdragon.sdk.display.xml
+-framework/com.qti.snapdragon.sdk.display.jar|e6387246d96376fd832fdcf14b65e149b6333bb2
+etc/permissions/com.qti.snapdragon.sdk.display.xml
 vendor/bin/mm-pp-dpps
 vendor/lib/libdisp-aba.so
 vendor/lib64/libdisp-aba.so
 
 # QMI
-system/bin/irsc_util
-system/etc/permissions/qti_permissions.xml
-system/lib/libQseeOptService.so
+bin/irsc_util
+etc/permissions/qti_permissions.xml
+lib/libQseeOptService.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -859,7 +859,7 @@ vendor/lib/libqmiservices.so
 vendor/lib/libqti-wl.so
 vendor/lib/libquipc_os_api.so
 vendor/lib/libsmemlog.so
-vendor/lib64/libQseeOptService.so
+lib64/libQseeOptService.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -879,32 +879,32 @@ vendor/lib64/libqmiservices.so
 vendor/lib64/libqti-wl.so
 vendor/lib64/libquipc_os_api.so
 vendor/lib64/libsmemlog.so
-system/etc/firmware/leia_pfp_470.fw
-system/etc/firmware/leia_pm4_470.fw
-system/etc/firmware/tas2555_uCDSP.bin
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/tas2555_uCDSP.bin
 
 # Radio
-system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|08853164bffe2b34aa26e6d2a6a0accdca5fd2fd
-system/app/datastatusnotification/datastatusnotification.apk|d17de48b369ef4de4f513c6e2f4239f65496dc51
-system/app/shutdownlistener/shutdownlistener.apk|343fc7da8b550d2b25924192d11684a680461376
-system/app/fastdormancy/fastdormancy.apk|f439081721e580d37984a7c03c53055e362a0542
-system/bin/port-bridge
-system/bin/netmgrd
-system/bin/qmi_motext_hook
-system/bin/radish
-system/bin/rmt_storage
-system/bin/tftp_server
-system/bin/iop
-system/etc/permissions/qcrilhook.xml
-system/etc/data/netmgr_config.xml
-system/etc/permissions/embms.xml
-system/etc/permissions/telephonyservice.xml
-system/etc/data/dsi_config.xml
-system/ramework/embmslibrary.jar|a06799495515305de3e5d432ec62a1f692200c99
-system/framework/qcrilhook.jar|ba5266e9a3e9c6f24985bf461871609d472c5dac
-system/framework/qcnvitems.jar|24494a8f1aaa969282dc217fb71f05af5efa1336
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|08853164bffe2b34aa26e6d2a6a0accdca5fd2fd
+-app/datastatusnotification/datastatusnotification.apk|d17de48b369ef4de4f513c6e2f4239f65496dc51
+-app/shutdownlistener/shutdownlistener.apk|343fc7da8b550d2b25924192d11684a680461376
+-app/fastdormancy/fastdormancy.apk|f439081721e580d37984a7c03c53055e362a0542
+bin/port-bridge
+bin/netmgrd
+bin/qmi_motext_hook
+bin/radish
+bin/rmt_storage
+bin/tftp_server
+bin/iop
+etc/permissions/qcrilhook.xml
+etc/data/netmgr_config.xml
+etc/permissions/embms.xml
+etc/permissions/telephonyservice.xml
+etc/data/dsi_config.xml
+-framework/embmslibrary.jar|a06799495515305de3e5d432ec62a1f692200c99
+-framework/qcrilhook.jar|ba5266e9a3e9c6f24985bf461871609d472c5dac
+-framework/qcnvitems.jar|24494a8f1aaa969282dc217fb71f05af5efa1336
 vendor/qcril.db
-system/lib/libmotext_inf.so
+lib/libmotext_inf.so
 vendor/bin/qti
 vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
@@ -920,8 +920,8 @@ vendor/lib/libsettings.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libxml.so
-vendor/lib64/libqmimotext.so
-vendor/lib64/libmotext_inf.so
+lib64/libqmimotext.so
+lib64/libmotext_inf.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
@@ -936,7 +936,7 @@ vendor/lib64/libsettings.so
 vendor/lib64/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libxml.so
-vendor/lib64/libtzssm.so
+lib64/libtzssm.so
 
 # SCVE
 vendor/lib/libscveBlobDescriptor.so
@@ -985,8 +985,8 @@ vendor/lib64/libscveTextRecoPostProcessing.so
 vendor/lib64/libscveTextReco_stub.so
 
 # Sensorhub
-system/bin/sensors.qcom
-vendor/lib/hw/sensors.msm8953.so
+bin/sensors.qcom
+lib/hw/sensors.msm8953.so
 vendor/lib/hw/activity_recognition.msm8953.so
 vendor/lib/sensors.alsps.so
 vendor/lib/sensors.st.so
@@ -999,7 +999,7 @@ vendor/lib/libdrplugin_client.so
 vendor/lib/libevent_observer.so
 vendor/lib/lib_acgdaemon.so
 vendor/lib/sensor_calibrate.so
-vendor/lib64/hw/sensors.msm8953.so
+lib64/hw/sensors.msm8953.so
 vendor/lib64/hw/activity_recognition.msm8953.so
 vendor/lib64/sensors.alsps.so
 vendor/lib64/sensors.st.so
@@ -1014,8 +1014,8 @@ vendor/lib64/lib_acgdaemon.so
 vendor/lib64/sensor_calibrate.so
 
 # TAS
-system/lib/libTAS2555ftc.so
-system/lib64/libTAS2555ftc.so
+lib/libTAS2555ftc.so
+lib64/libTAS2555ftc.so
 
 # Thermal
 vendor/bin/thermal-engine
@@ -1024,15 +1024,15 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
-system/app/TimeService/TimeService.apk|2b874af6b5ebf4d5ecfdc893a4731574bf02bb05
-system/bin/time_daemon
-vendor/lib/libtime_genoff.so
+-app/TimeService/TimeService.apk|2b874af6b5ebf4d5ecfdc893a4731574bf02bb05
+bin/time_daemon
+-vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
-vendor/lib64/libtime_genoff.so
+-vendor/lib64/libtime_genoff.so
 vendor/lib64/libTimeService.so
 
 # USB
-system/etc/firmware/ice40.bin
+etc/firmware/ice40.bin
 
 # Widevine
 vendor/lib/mediadrm/libwvdrmengine.so
@@ -1040,9 +1040,9 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
 # WiFi
-system/bin/cnss-daemon
-system/bin/cnss_diag
-system/bin/wcnss_service
+vendor/bin/cnss-daemon
+bin/cnss_diag
+vendor/bin/wcnss_service
 vendor/lib/libxtwifi_ulp_adaptor.so
 vendor/lib/liblowi_wifihal.so
 vendor/lib/liblowi_wifihal_nl.so
@@ -1056,5 +1056,5 @@ vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/fstman.ini
-system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_lenovo.bin
-system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary_lenovo.dat
+etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_lenovo.bin
+etc/firmware/wlan/prima/WCNSS_wlan_dictionary_lenovo.dat
