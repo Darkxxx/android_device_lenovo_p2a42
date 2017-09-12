@@ -48,9 +48,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0
 
-# Netutils
+# Gatekeeper
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
+    android.hardware.gatekeeper@1.0-impl
 
 #Nfc
 PRODUCT_PACKAGES += \
