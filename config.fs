@@ -3,14 +3,14 @@ value:2901
 
 [vendor/bin/wcnss_filter]
 mode: 0755
-user: AID_WİFİ
-group: AID_WİFİ
+user: AID_BLUETOOTH
+group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
 
 [system/bin/wcnss_filter]
 mode: 0755
-user: AID_WİFİ
-group: AID_WİFİ
+user: AID_BLUETOOTH
+group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
 
 [system/bin/hw/android.hardware.bluetooth@1.0-service-qti]
