@@ -64,9 +64,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
-# Netd
-TARGET_KERNEL_NO_FRA_UID_RANGE_SUPPORT := true
-
 # Wificond
 TARGET_KERNEL_NO_NL80211_ATTR_MAC := true
 
@@ -176,9 +173,7 @@ USE_SENSOR_MULTI_HAL := true
 #include device/qcom/sepolicy/sepolicy.mk
 
 # BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
-
-# Wifi
-    
+  
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HAS_QCOM_WLAN_SDK := true
