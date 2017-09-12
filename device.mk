@@ -22,7 +22,7 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk
 $(call inherit-product, vendor/lenovo/p2a42/p2a42-vendor.mk)
 $(call inherit-product, device/lenovo/p2a42/hidl.mk)
 
-TARGET_FS_CONFIG_GEN := device/Lenovo/p2a42/config.fs
+TARGET_FS_CONFIG_GEN := device/lenovo/p2a42/config.fs
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -121,11 +121,11 @@ PRODUCT_COPY_FILES += \
 
 # Audio configuration [LineageOS]
 PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:system/etc/audio_policy_volumes.xml \
-    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/etc/default_volume_tables.xml \
-    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:system/etc/r_submix_audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:system/vendor/etc/a2dp_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:system/vendor/etc/audio_policy_volumes.xml \
+    frameworks/av/services/audiopolicy/config/default_volume_tables.xml:system/vendor/etc/default_volume_tables.xml \
+    frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:system/vendor/etc/r_submix_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/vendor/etc/usb_audio_policy_configuration.xml
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -174,10 +174,6 @@ PRODUCT_PACKAGES += \
     libextmedia_jni \
     libminui
     
-# Bluetooth
-PRODUCT_PACKAGES += \
-    libbt-vendor
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd
