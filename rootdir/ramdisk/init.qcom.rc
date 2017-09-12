@@ -34,6 +34,7 @@ import init.qcom.test.rc
 import init.lenovo.common.rc
 
 on early-init
+    mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
 
 on init
@@ -393,9 +394,9 @@ on post-fs-data
     # qti-logkit data
     mkdir /data/misc/qti-logkit/ 0771 system system
     mkdir /data/misc/qti-logkit/shared-privileged/ 2770 system system
-    mkdir /data/misc/qti-logkit/shared-public/ 2770 system qcom_diag
+    mkdir /data/misc/qti-logkit/shared-public/ 2770 system diag
     mkdir /data/misc/qti-logkit/socket-privileged/ 2770 system system
-    mkdir /data/misc/qti-logkit/socket-public/ 2750 system qcom_diag
+    mkdir /data/misc/qti-logkit/socket-public/ 2750 system diag
     mkdir /data/misc/qti-logkit/logdata/ 2750 system shell
 
     #Create SWAP related dirs
@@ -428,7 +429,7 @@ service iop /system/bin/iop
 service qcomsysd /system/bin/qcom-system-daemon
     class main
     user root
-    group root qcom_diag
+    group root diag
     oneshot
 
 service ssr_setup /system/bin/ssr_setup
@@ -609,7 +610,7 @@ on property:sys.ims.DATA_DAEMON_STATUS=1
 service start_hci_filter /system/vendor/bin/wcnss_filter
     class late_start
     user bluetooth
-    group bluetooth qcom_diag system wakelock
+    group bluetooth diag system wakelock
     disabled
 
 #net_admin capability needed to write rfkill sysfs entry
@@ -681,7 +682,7 @@ service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
 service bridgemgrd /system/bin/bridgemgrd
     class late_start
     user radio
-    group radio qcom_diag
+    group radio diag
     disabled
 
 service port-bridge /system/bin/port-bridge
@@ -694,14 +695,14 @@ service port-bridge /system/bin/port-bridge
 service qmiproxy /system/bin/qmiproxy
     class main
     user radio
-    group radio qcom_diag
+    group radio diag
     disabled
 
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/bin/qmuxd
     class main
     user root
-    group radio audio bluetooth gps nfc qcom_diag
+    group radio audio bluetooth gps nfc diag
     disabled
 
 service netmgrd /system/bin/netmgrd
@@ -712,7 +713,7 @@ service ipacm-diag /system/bin/ipacm-diag
     class main
     user system
     socket ipacm_log_file dgram 660 system net_admin
-    group net_admin qcom_diag
+    group net_admin diag
     disabled
 
 service ipacm /system/bin/ipacm
@@ -724,7 +725,7 @@ service ipacm /system/bin/ipacm
 service qti /system/vendor/bin/qti
     class main
     user radio
-    group radio net_raw qcom_diag usb net_admin
+    group radio net_raw diag usb net_admin
     disabled
 
 service sensors /system/bin/sensors.qcom
@@ -944,7 +945,7 @@ service dhcpcd_bnep4 /system/bin/dhcpcd -BKLG
 service loc_launcher /system/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
-    group gps inet qcom_diag wifi
+    group gps inet diag wifi
 
 service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     class late_start
@@ -1173,7 +1174,7 @@ service LKCore-dbg /system/vendor/bin/LKCore
     oneshot
     disabled
     user root
-    group root system log qcom_diag net_raw
+    group root system log diag net_raw
 
 # service for USER
 service LKCore-rel /system/vendor/bin/LKCore
@@ -1181,7 +1182,7 @@ service LKCore-rel /system/vendor/bin/LKCore
     oneshot
     disabled
     user system
-    group system log qcom_diag
+    group system log diag
 
 # Coresight early boot service
 service cs-early-boot /system/bin/sh /persist/coresight/qdss.agent.sh early-boot /system/etc/init.qcom.debug.sh
